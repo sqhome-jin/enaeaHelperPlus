@@ -62,8 +62,16 @@
         currentPageComplete = false;
         let goLearnList = document.querySelectorAll(".golearn.ablesky-colortip.saveStuCourse");
         sleep(1000).then(() => {
-            window.location.href = 'https://study.enaea.edu.cn' + goLearnList[index].getAttribute("data-vurl");
+            window.location.href = 'https://study.enaea.edu.cn' + getLeassonUrl(goLearnList[index].getAttribute("data-vurl"));
         });
+    }
+
+    function getLeassonUrl(dataUrl) {
+        if (dataUrl.startsWith("/")) {
+            return dataUrl;
+        } else {
+            return "/" + dataUrl;
+        }
     }
 
     function findAndStartChapter() {
