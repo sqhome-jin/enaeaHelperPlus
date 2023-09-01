@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         enaeaHelperPlus
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  make your life easier
 // @author       SQHome-Jin
 // @match        https://study.enaea.edu.cn/circleIndexRedirect.do*
