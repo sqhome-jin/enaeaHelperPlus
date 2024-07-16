@@ -18,9 +18,17 @@
     let continuePlay = setInterval(continuePlayVideo, 3000);
     let continueChapter = setInterval(findAndStartChapter, 3000);
     let continueLesson = setInterval(clickNextPageButton, 3000);
+    let continueGoBack = setInterval(goBackToStart, 3000);
     let pageLoading = false;
     let currentPageComplete = true;
-    let playbackSpeed = 4; // Recommended speed: 2-4
+    let playbackSpeed = 10; // Recommended speed: 2-4
+
+    function goBackToStart() {
+        let video = document.getElementById("J_CC_videoPlayerDiv").childNodes[0];
+        if (video.currentTime > video.duration / 3) {
+            video.currentTime = 0;
+        }
+    }
 
     if (isContentsPage()) {
         continuePlayVideo();
