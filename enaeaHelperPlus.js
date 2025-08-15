@@ -157,7 +157,7 @@
     }
 
     function isContentsPage() {
-        return currentPagePath === '/circleIndexRedirect.do' && testURL('action', 'toNewMyClass') && testURL('type', 'course');
+        return currentPagePath === '/circleIndexRedirect.do' && testURL('action', 'toNewMyClass') && (testURL('type', 'course')|| testURL('type', 'courseCategory4jwu'));
     }
 
     function isLessonPage() {
