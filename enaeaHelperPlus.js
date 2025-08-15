@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         enaeaHelperPlus
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @license      MIT
 // @description  make your life easier
 // @author       SQHome-Jin
